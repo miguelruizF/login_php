@@ -1,0 +1,45 @@
+body {
+    margin: 0;
+    padding: 0;
+    align-items: center;
+    background: #FC466B;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #3F5EFB, #FC466B);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #3F5EFB, #FC466B);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    font-family: 'Comfortaa', cursive;
+}
+
+.section-login {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+}
+
+.title--login {
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.title--form {
+    margin-bottom: 25px;
+    font-weight: 700;
+}
+
+form {
+    margin: 0 auto;
+    padding: 30px;
+    max-width: 400px;
+    max-height: 600px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 5px 5px 20px 4px rgba(27, 27, 27, 0.897);
+}
+
+#btnSubmit {
+    width: 100%;
+}
