@@ -1,4 +1,7 @@
-<?php   
+<?php  
+
+session_start();
+
 include_once "conexion.php";
 $objeto = new Conexion();
 $conexion = $objeto->Conectar();
@@ -9,7 +12,7 @@ $password = (isset($_POST['password'])) ? $_POST['password'] : "";
 
 $pass = md5($password); //Encripta el password enviada y se compara con la de la base de datos
 
-$consulta = "SELECT * FROM usuarios_oek WHERE usuario = '$usuario' AND password = '$pass'";
+$consulta = "SELECT * FROM usuarios_oek WHERE nombre = '$usuario' AND password = '$pass'";
 $resultado = $conexion -> prepare($consulta);   
 $resultado -> execute();
 
